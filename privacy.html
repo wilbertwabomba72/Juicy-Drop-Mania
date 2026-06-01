@@ -1,117 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juicy Drop Mania - Privacy Policy</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            margin: 0;
-            padding: 20px;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-        }
-        h1 {
-            color: #e74c3c;
-            text-align: center;
-            font-size: 2.5em;
-        }
-        h2 {
-            color: #2c3e50;
-            margin-top: 30px;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        p {
-            color: #34495e;
-            font-size: 1.1em;
-            line-height: 1.8;
-        }
-        .button {
-            display: inline-block;
-            padding: 15px 30px;
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-            color: #e74c3c;
-            text-decoration: none;
-            border-radius: 30px;
-            font-size: 1.1em;
-            font-weight: bold;
-            margin: 20px 0;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(252,182,159,0.4);
-        }
-        .button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(252,182,159,0.6);
-        }
-        .developer-info {
-            margin-top: 40px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .developer-info p {
-            margin: 5px 0;
-            text-align: center;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - Juicy Drop Mania</title>
+  <style>
+:root {
+  color-scheme: light;
+  --sky: #70d3ff;
+  --mint: #d8fac1;
+  --leaf: #54bf46;
+  --orange: #ff9b2e;
+  --blue: #3f8cff;
+  --ink: #173044;
+  --soft: rgba(255,255,255,.78);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, var(--mint) 0%, #b8f2ff 45%, var(--sky) 100%);
+  min-height: 100vh;
+}
+.page {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 42px 0 34px;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+.nav a, .primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: var(--blue);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  box-shadow: 0 7px 0 rgba(34, 88, 130, .18);
+}
+.nav a.alt { background: var(--orange); }
+.hero {
+  padding: 28px 14px 20px;
+}
+h1 {
+  margin: 0;
+  font-size: clamp(42px, 8vw, 82px);
+  line-height: .98;
+  color: #fff;
+  text-shadow: 0 5px 0 rgba(43, 104, 83, .20);
+}
+.tagline {
+  margin: 18px auto 0;
+  max-width: 760px;
+  font-size: clamp(18px, 3vw, 26px);
+  line-height: 1.45;
+  color: rgba(255,255,255,.96);
+  text-shadow: 0 2px 0 rgba(43, 104, 83, .15);
+}
+.panel {
+  margin: 26px auto;
+  padding: 28px;
+  border-radius: 28px;
+  background: var(--soft);
+  border: 2px solid rgba(255,255,255,.68);
+  box-shadow: 0 18px 40px rgba(37, 111, 142, .14);
+}
+.panel h2 { margin: 0 0 14px; font-size: clamp(24px, 4vw, 36px); }
+.panel p, .panel li { font-size: 18px; line-height: 1.65; }
+ul { display: inline-block; text-align: left; margin: 8px auto 0; padding-left: 24px; }
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 22px;
+}
+.shot {
+  width: min(100%, 230px);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 18px 34px rgba(20, 92, 122, .24);
+  background: #fff;
+}
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.developer {
+  margin: 30px auto 0;
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(255,255,255,.72);
+  text-align: center;
+}
+.developer h2 { margin: 0 0 10px; }
+.developer p { margin: 6px 0; font-size: 17px; }
+a { color: #1763bf; }
+.footer { margin-top: 24px; color: rgba(23,48,68,.78); font-size: 14px; }
+@media (max-width: 560px) {
+  .page { width: min(100% - 20px, 1120px); padding-top: 24px; }
+  .panel { padding: 20px 14px; border-radius: 22px; }
+  .shot { width: min(46%, 190px); border-radius: 20px; }
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>🔒 Privacy Policy</h1>
-        
-        <h2>Introduction</h2>
-        <p>This Privacy Policy describes how we collect, use, and disclose information when you use our mobile game "Juicy Drop Mania" (the "Game"). We are committed to protecting your privacy and ensuring the security of your personal information.</p>
-        
-        <h2>Information We Collect</h2>
-        <p>We may collect the following types of information when you use the Game:</p>
-        <ul>
-            <li><strong>Device Information:</strong> We may collect information about your device, including device type, operating system version, unique device identifiers, and mobile network information.</li>
-            <li><strong>Usage Data:</strong> We may collect information about how you interact with the Game, such as the features you use, the levels you complete, and your in-game achievements.</li>
-            <li><strong>Location Data:</strong> With your consent, we may collect your approximate location to provide location-based features.</li>
-        </ul>
-        
-        <h2>How We Use Your Information</h2>
-        <p>We use the collected information for the following purposes:</p>
-        <ul>
-            <li>To provide and maintain the Game</li>
-            <li>To improve the Game and develop new features</li>
-            <li>To personalize your gaming experience</li>
-            <li>To analyze usage patterns and optimize performance</li>
-            <li>To communicate with you about updates and promotions</li>
-        </ul>
-        
-        <h2>Third-Party Services</h2>
-        <p>The Game may contain links to third-party websites or services. We are not responsible for the privacy practices or content of these third parties. We encourage you to review their privacy policies before using their services.</p>
-        
-        <h2>Children's Privacy</h2>
-        <p>The Game is intended for users of all ages. We do not knowingly collect personal information from children under the age of 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information.</p>
-        
-        <h2>Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
-        
-        <h2>Contact Us</h2>
-        <p>If you have any questions or concerns about this Privacy Policy, please contact us at: 2531194087@qq.com</p>
-        
-        <div style="text-align: center;">
-            <a href="index.html" class="button">Back to Game</a>
-        </div>
-        
-        <div class="developer-info">
-            <p><strong>Developer:</strong> Chen Mengying</p>
-            <p><strong>Phone:</strong> +86 18903024165</p>
-            <p><strong>Email:</strong> 2531194087@qq.com</p>
-        </div>
-    </div>
+  <main class="page">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="alt" href="privacy.html">Privacy Policy</a>
+    </nav>
+    <section class="hero">
+      <h1>Privacy Policy</h1>
+      <p class="tagline">This Privacy Policy explains how Juicy Drop Mania handles information.</p>
+    </section>
+    <section class="panel">
+      <h2>Overview</h2>
+      <p>Juicy Drop Mania is a casual single-player game. The game is designed to be played offline and does not require users to create an account.</p>
+      <h2>Information We Collect</h2>
+      <p>We do not directly collect personal information such as name, address, phone number, email address, or payment information through the game.</p>
+      <h2>Game Data</h2>
+      <p>The game may store local progress, settings, level completion, scores, and star ratings on your device. This information is used only to provide gameplay features.</p>
+      <h2>Advertising and Analytics</h2>
+      <p>The app may include third-party advertising, analytics, or security SDKs. These services may process device identifiers, diagnostics, usage events, or approximate technical information according to their own privacy practices, where permitted by your device settings and applicable law.</p>
+      <h2>Children's Privacy</h2>
+      <p>The game is intended for a general audience. We do not knowingly collect personal information from children.</p>
+      <h2>Data Sharing</h2>
+      <p>We do not sell personal information. Any data handled by third-party SDKs is processed by those service providers for advertising, analytics, fraud prevention, and app functionality.</p>
+      <h2>Your Choices</h2>
+      <p>You can limit tracking permissions, reset advertising identifiers, or manage app permissions in iOS Settings. You may delete the app to remove locally stored game data from your device.</p>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy when the app changes. Updates will be reflected on this page.</p>
+      <h2>Contact</h2>
+      <p>If you have questions about this Privacy Policy, please contact us using the developer information below.</p>
+    </section>
+    
+<section class="developer" id="developer">
+  <h2>Developer Information</h2>
+  <p><strong>Name:</strong> Chen Mengying</p>
+  <p><strong>Phone:</strong> +86 18903024165</p>
+  <p><strong>Email:</strong> <a href="mailto:2531194087@qq.com">2531194087@qq.com</a></p>
+</section>
+
+    <p class="footer">Copyright © 2026 ITZZW Studio. All rights reserved.</p>
+  </main>
 </body>
 </html>
